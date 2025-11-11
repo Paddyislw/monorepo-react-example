@@ -5,9 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: ['monorepo-react-example--main.autogen.nodeops.network']
+    host: '0.0.0.0',
+    allowedHosts: true
   },
   server: {
-    allowedHosts: ['monorepo-react-example--main.autogen.nodeops.network']
+    host: '0.0.0.0',
+    allowedHosts: true
   }
 })
