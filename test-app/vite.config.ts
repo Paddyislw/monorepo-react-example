@@ -6,10 +6,22 @@ export default defineConfig({
   plugins: [react()],
   preview: {
     host: '0.0.0.0',
-    allowedHosts: ['monorepo-react-example--main.autogen.nodeops.network', '.nodeops.network']
+    port: 4173,
+    strictPort: false,
+    allowedHosts: [
+      'monorepo-react-example--main.autogen.nodeops.network',
+      '.nodeops.network',
+      '.autogen.nodeops.network'
+    ]
   },
   server: {
     host: '0.0.0.0',
-    allowedHosts: ['monorepo-react-example--main.autogen.nodeops.network', '.nodeops.network']
+    port: 5173,
+    strictPort: false,
+    allowedHosts: [
+      'monorepo-react-example--main.autogen.nodeops.network',
+      '.nodeops.network',
+      '.autogen.nodeops.network'
+    ]
   }
 })
