@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   preview: {
     host: '0.0.0.0',
-    allowedHosts: true
+    allowedHosts: ['monorepo-react-example--main.autogen.nodeops.network', '.nodeops.network']
   },
   server: {
     host: '0.0.0.0',
-    allowedHosts: true
+    allowedHosts: ['monorepo-react-example--main.autogen.nodeops.network', '.nodeops.network']
   }
 })
